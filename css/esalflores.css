@@ -97,6 +97,11 @@ body {
 		text-align: center;
 	}
 }
+
+.dropdown-menu.show {
+    display: block;
+    min-width: max-content;
+}
 /*
 *
 * ==========================================
