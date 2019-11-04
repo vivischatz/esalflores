@@ -21,10 +21,14 @@ body {
 		height: auto;
 		background-color: #0f6b39;
 		color: #ffffff;
-		padding: 2px 5px;
+		padding: 0 5px;
 	}
 	.barra-topo-verde a {
 		color: #ffffff;
+	}
+	.barra-topo-verde .nav-item {
+		display: inline-flex;
+    	margin-right: 8px;
 	}
 }
 .item-carrinho {
