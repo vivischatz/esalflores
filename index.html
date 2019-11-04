@@ -44,14 +44,14 @@ $(document).ready(function() {
 <header class="section-header">
   <nav class="navbar navbar-expand-lg barra-topo-verde">
     <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="true" aria-label="Toggle navigation"> <i class="fas fa-info-circle text-white"></i></button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="true" aria-label="Toggle navigation"> <i class="fas fa-info-circle text-white"></i> </button> <p class="navbar-toggle cellonly small mt-3">Televendas: (41) 3091-0403</p>
       <div class="collapse navbar-collapse" id="navbarTop">
         <ul class="navbar-nav list-inline">
-          <li class=""><p class="small mt-3">Televendas: (41) 3091-0403</p></li>
-          <li class="list-inline-item"><a href="#"> <i class="fab fa-whatsapp mt-3"></i></a></li>
-          <li class="list-inline-item"><a href="#"> <i class="fab fa-facebook mt-3"></i></a></li>
-          <li class="list-inline-item"><a href="#"> <i class="fab fa-instagram mt-3"></i></a></li>
-          <li class="list-inline-item"><a href="#"> <i class="fab fa-youtube mt-3"></i></a></li>
+          <li class="deskonly"><p class="small mt-3">Televendas: (41) 3091-0403</p></li>
+          <li class="list-inline-item deskonly"><a href="#"> <i class="fab fa-whatsapp mt-3"></i></a></li>
+          <li class="list-inline-item deskonly"><a href="#"> <i class="fab fa-facebook mt-3"></i></a></li>
+          <li class="list-inline-item deskonly"><a href="#"> <i class="fab fa-instagram mt-3"></i></a></li>
+          <li class="list-inline-item deskonly"><a href="#"> <i class="fab fa-youtube mt-3"></i></a></li>
         </ul>
 		  <ul class="nav mx-auto" id="localtopo">
 			  <li class="nav-item">
@@ -72,9 +72,103 @@ $(document).ready(function() {
   <section class="header-main shadow-sm">
     <div class="container">
       <div class="row-sm align-items-center">
-        <div class="col-lg-4-24 col-sm-3"> <a class="navbar-brand" href="#"><img class="logo" src="images/logos/esalflores.png" alt="Esalflores" title="Esalflores"></a> </div>
-        <div class="col-lg-13-24 col-sm-8">
-          <form action="#" class="py-1 w-100">
+        
+		  
+		  
+		  
+		  <div class="col-lg-2 col-md-5 col-sm-4 col-xs-12"> <a class="navbar-brand d-block" href="#"><img class="logo img-fluid d-block mx-auto" src="images/logos/esalflores.png" alt="Esalflores" title="Esalflores"></a> </div>
+		  
+		  
+        <div class="col-md-7 col-sm-8 col-xs-12 cellonly">
+          <div class="widgets-wrap row no-gutters py-1">
+            <div class="col-7">
+              <div class="widget-header dropdown"> <a href="#" data-toggle="dropdown" data-offset="20,10">
+                <div class="icontext">
+                  <div class="icon-wrap"><i class="text-warning icon-sm fa fa-user"></i></div>
+                  <div class="text-wrap text-dark small"> Login / Minha Conta <i class="fa fa-caret-down"></i> </div>
+                </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <form class="px-4 py-3">
+                    <div class="form-group">
+                      <label>Email ou CPF</label>
+                      <input type="email" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label>Senha</label>
+                      <input type="password" class="form-control" placeholder="******">
+                    </div>
+                    <button type="submit" class="btn btn-success">OK</button>
+                  </form>
+                  <hr class="dropdown-divider">
+                  <a class="dropdown-item" href="#">Não tem uma conta? Cadastre-se.</a> <a class="dropdown-item" href="#">Esqueceu sua senha?</a> </div>
+                <!--  dropdown-menu .// --> 
+              </div>
+              <!-- widget-header .// --> 
+            </div>
+            <!-- col.// -->
+            <div class="col-5">
+              <div class="widget-header dropdown"> <a href="#" data-toggle="dropdown" data-offset="20,10">
+                <div class="icontext">
+                  <div class="icon-wrap"><i class="text-warning icon-sm fa fa-shopping-basket" aria-hidden="true"></i></div>
+                  <div class="text-wrap text-dark small"> Minha Cesta <i class="fa fa-caret-down"></i> </div>
+                </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-carrinho p-3">
+                  <ul class="list-inline">
+                    <li>
+                      <p>CESTA 1</p>
+                    </li>
+                    <li class="list-inline-item"><img class="img-fluid img-xs" src="images/items/3574.jpg"></li>
+                    <li class="list-inline-item item-carrinho"> <small>Esalflores</small><br>
+                      Bombons e Rosas para você <br>
+                      <a href=""><small>Excluir</small></a></li>
+                    <li class="list-inline-item">
+                      <input type="number" name="quantity" min="1" placeholder="1" max="15">
+                      <br>
+                      <b>R$ 135,89</b> </li>
+                  </ul>
+                  <hr class="dropdown-divider">
+                  <ul class="list-inline">
+                    <li>
+                      <p>CESTA 2</p>
+                    </li>
+                    <li class="list-inline-item"><img class="img-fluid img-xs" src="images/items/3574.jpg"></li>
+                    <li class="list-inline-item item-carrinho"> <small>Esalflores</small><br>
+                      Bombons e Rosas para você <br>
+                      <a href=""><small>Excluir</small></a></li>
+                    <li class="list-inline-item">
+                      <input type="number" name="quantity" min="1" placeholder="1" max="15">
+                      <br>
+                      <b>R$ 135,89</b> </li>
+                  </ul>
+                  <hr class="dropdown-divider">
+                  <p class="text-center">Subtotal: <span class="price-new">R$ 272,56</span></p>
+                  <button type="button" class="btn btn-success btn-block mt-3">Ir para minha cesta</button>
+                </div>
+                <!--  dropdown-menu .// --> 
+              </div>
+              <!-- widget-header .// --> 
+            </div>
+          </div>
+          <!-- widgets-wrap.// row.// --> 
+        </div>
+		  
+		  
+		  
+		  <div class="col-lg-7 col-md-12 col-sm-12">
+          <form action="#" class="py-1">
+			  
+			  
+            <div class="input-group">
+				<input type="text" class="form-control" placeholder="Buscar">
+              <input type="text" class="form-control" placeholder="Localização">
+              <div class="input-group-append">
+                <button class="btn btn-warning" type="submit"> <i class="fa fa-search"></i></button>
+              </div>
+            </div>
+			  
+			  <!--
             <input type="text" class="form-control float-left w-50 mr-2" placeholder="Buscar">
             <div class="input-group w-auto">
               <input type="text" class="form-control" placeholder="Localização">
@@ -82,14 +176,16 @@ $(document).ready(function() {
                 <button class="btn btn-warning" type="submit"> <i class="fa fa-search"></i></button>
               </div>
             </div>
+			  -->
+			  
           </form>
           <!-- search-wrap .end// --> 
         </div>
         <!-- col.// -->
-        <div class="col-lg-7-24 col-sm-12">
+        <div class="col-lg-3 deskonly">
           <div class="widgets-wrap float-right row no-gutters py-1">
-            <div class="col-auto">
-              <div class="widget-header dropdown"> <a href="#" data-toggle="dropdown" data-offset="20,10">
+            <div class="col-auto d-inline">
+              <div class="widget-header dropdown"> <a href="#" data-toggle="dropdown">
                 <div class="icontext">
                   <div class="icon-wrap"><i class="text-warning icon-sm fa fa-user"></i></div>
                   <div class="text-wrap text-dark"> Login <br>
@@ -115,8 +211,8 @@ $(document).ready(function() {
               <!-- widget-header .// --> 
             </div>
             <!-- col.// -->
-            <div class="col-auto">
-              <div class="widget-header dropdown"> <a href="#" data-toggle="dropdown" data-offset="20,10">
+            <div class="col-auto d-inline">
+              <div class="widget-header dropdown"> <a href="#" data-toggle="dropdown">
                 <div class="icontext">
                   <div class="icon-wrap"><i class="text-warning icon-sm fa fa-shopping-basket" aria-hidden="true"></i></div>
                   <div class="text-wrap text-dark"> Minha <br>
