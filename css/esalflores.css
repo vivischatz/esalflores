@@ -157,9 +157,12 @@ body {
     margin-top: 0 !important;
 }
 
-.img-banner {
-	min-height: 200px;
-	overflow: hidden;
+.promo-banner {
+    padding: 20px;
+    line-height: 0;
+}
+.row-sem-margem {
+	margin: 0 -30px;
 }
 /*
 *
