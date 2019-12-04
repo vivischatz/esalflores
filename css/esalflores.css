@@ -4,7 +4,12 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
-
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
 
 @media (min-width: 992px){
 	.barra-topo-verde {
